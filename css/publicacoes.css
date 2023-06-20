@@ -76,15 +76,30 @@ main {
 
 #amigos{
     width: 35%;
+    position: relative;
+    padding-right: 8em;
+    margin-right: 8em;
+    padding-left: 10em;
    
     
   }
+
+  .linha-vertical {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: #000000;
+    height: 40em;
+    margin-top: 10%;
+}
 
 /*pesquisar*/
 
 #amigos .pesquisar{
     margin-top: 4em;
-    padding: 0 80px;
+    padding: 0 30px;
     display: flex;
   }
 
@@ -116,7 +131,7 @@ main {
   #amigos .fotos{
     display: flex;
     margin-top: 2em;
-    padding: 0 80px;
+    padding: 0 30px;
     width: 5em;
     height: 5em;
   }
@@ -127,7 +142,7 @@ main {
 
 
   #amigos h3{
-    margin-left: 80px;
+    margin-left: 30px;
     margin-top: 1em;
    font-size: 30px;
    font-family: 'Co Text', sans-serif;
@@ -148,6 +163,8 @@ main {
 
   #publicar{
     width: 50%;
+    
+    
     
   }
 
