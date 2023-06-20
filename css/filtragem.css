@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    background-color: #559CDA;
+    height: 4.65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #filtragem {
+    background-color: #F7F7F7;
+    color: #559CDA;
+    border-radius: 10vw;
+}
+
+nav ul li {
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.4vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    cursor: pointer;
+    border-radius: 10vw;
+}
+
+nav ul li:hover {
+    transition: .5s;
+    background-color: #F7F7F7;
+    color: #559CDA;
+}
+
+nav #home {
+    margin-left: 2vw;
+}
+
+nav ul li:not(#publicacoes) {
+    margin-right: 2vw;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#dots {
+    margin-right: 1.5vw;
+}
+
+#dots,
+#bell {
+    height: 2.6vw;
+}
+
+#avatar {
+    height: 3.5vw;
+}
+
+main {
+    height: 95vh;
+    background-color: #E9F2F1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 6vw;
+    background-color: #559CDA;
+}
+
+footer ul li {
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 1vw;
+}
+
+#fortes {
+    height: 5vw;
+}

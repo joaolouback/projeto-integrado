@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Talentos</title>
+    <link rel="stylesheet" href="/css/perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <a href="/html/home.html">
+                <li id="home">Home</li>
+            </a>
+            <a href="/html/filtragem.html">
+                <li id="filtragem">Filtragem de Qualidades</li>
+            </a>
+            <a href="/html/publicacoes.html" id="publicacoes">
+                <li id="publicacoes">Publicações</li>
+            </a>
+        </ul>
+
+        <ul>
+            <a href="/html/perfil.html">
+                <img src="/img/avatar.png" alt="avatar" id="avatar">
+            </a>
+            <a href="/html/perfil.html">
+                <img src="/img/dots.png" alt="dots" id="dots">
+            </a>
+            <a href="">
+                <img src="/img/bell.png" alt="bell" id="bell">
+            </a>
+            <a href="/html/ajuda.html">
+                <li id="ajuda">Ajuda</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="bloco-input">
+            <div class="bloco">
+        
+                <div class="inputs">
+                    <h2 class="nome">Nome</h2>
+                    <input type="text" id="input1" placeholder="Insira o seu nome">
+                    <img id="img1"  src="/img/editar.png" alt="">
+           
+                </div>
+        
+                <div class="inputs">
+                    <h2 class="estado-civil"> Estado civil</h2>
+                    <input type="text" id="input2" placeholder="Insira o seu estado civil">
+                    <img id="img2" src="/img/editar.png" alt="">
+                </div>
+        
+                    <div class="inputs">
+                    <h2 class="grau-de-instituicao">Grau de instituição</h2>
+                    <input type="text" id="input3" placeholder="Insira o seu grau de instituição">
+                    <img id="img3" src="/img/editar.png" alt="">
+                </div>
+        
+                    <div class="inputs">
+                        <div class="name">
+                            <h2> Residencia</h2> 
+                            <img src="/img/localizacao.png" alt="">
+                        </div>
+                            <input type="text" id="input4" placeholder="Insira o logradouro">
+                            <img id="img4" src="/img/editar.png" alt="">
+                </div>
+        
+                    <div class="inputs">
+                        <div class="name">
+                            <h2>Data de nascimento</h2>
+                            <img src="/img/calendario.png" alt="">
+                        </div>
+                            <input type="date" id="input5"> 
+                            <img id="img5"  src="/img/editar.png" alt="">
+                </div>
+        
+                    <div class="inputs">
+                    <h2 class="email">Email</h2>
+                    <input type="email" id="input6" placeholder="Insira o seu email"> 
+                    <img  id="img6" src="/img/editar.png" alt="">
+                </div>
+        
+        
+                    <div class="inputs">
+                    <h2 class="senha">Senha</h2>
+                    <input type="password" id="input7" placeholder="Insira a sua senha">
+                    <img id="toggle-password"  src="/img/olho.png" alt="">
+                    <img  id="img7" src="/img/editar.png" alt="">
+                </div>
+            </div>
+        
+        </section>
+        
+        
+        
+        <section id="qualidade">
+            <div id="bloco-qualidade">
+              <h2>Qualidades</h2>
+              <div id="qualidades-container">
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="proatividade">Proatividade</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="empatia">Empatia</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="eficiente">Eficiente</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="resiliencia">Resiliência</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="administracao">Administração</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="flexibilidade">Flexibilidade</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="persistencia">Persistência</label>
+                </div>
+                <div class="qualidade-item">
+                  <img src="/img/adicionar.png" alt="" class="adicionar-checkbox">
+                  <label for="criatividade">Criatividade</label>
+                </div>
+              </div>
+              <h4>Outros:</h4>
+              <div id="input-container">
+                <input type="text" id="input-qualidade" placeholder="Digite uma qualidade">
+                <button id="btn-adicionar">Adicionar</button>
+              </div>
+              <div id="qualidades-adicionadas">
+                <h3>Qualidades Adicionadas:</h3>
+              </div>
+              <ul id="lista-qualidades" class="checkbox-list">
+                <!-- As qualidades adicionadas e predefinidas serão exibidas aqui -->
+              </ul>
+            </div>
+            <div id="botao-container">
+              <button id="btn-enviar">Enviar</button>
+            </div>
+          </section>
+          
+          
+          
+        
+        
+        
+        
+        <section id="foto-perfil">
+            
+            <div id="caixa-adicionar-perfil">
+                <input type="file" id="selecionar-foto" accept="image/*">
+              
+                <div id="area-preview-quadrada" class="area-preview">
+                  <img id="foto-preview-quadrada" src="" alt="">
+                </div>
+        
+                <label for="selecionar-foto">Enviar a sua imagem</label>
+        <div class="background">
+                <div id="area-preview-redonda" class="area-preview">
+                   
+                  <img id="foto-preview-redonda" src="" alt="">
+                </div>    
+                </div>
+                <p>Pré-vizualização da foto de Perfil</p>
+              </div>
+              
+              
+        
+        </section>
+
+
+
+        
+    </main>
+
+    <footer>
+        <ul>
+            <a href="https://fortes.ind.br/" target="_blank">
+                <img src="/img/fortes.png" alt="logo fortes" id="fortes">
+            </a>
+        </ul>
+
+        <ul>
+            <li>Propósitos</li>
+            <li>Sustentabilidade</li>
+            <li>Gestao de Pessoas</li>
+            <li>Projetos sociais</li>
+        </ul>
+
+        <ul>
+            <li>Setores de Atuação</li>
+            <li>Melhor Solução Para os Clientes</li>
+            <li>Integridade</li>
+            <li>InovaFortes</li>
+        </ul>
+
+        <ul>
+            <li>Fale Conosco</li>
+            <li>Trabalhe Conosco</li>
+            <li>Notícias</li>
+            <li>Políticas de Privacidade</li>
+        </ul>
+
+        <ul>
+            <li>Avenida Maruipe, 2.793</li>
+            <li>Bairo Santa Luiza</li>
+            <li>Vitoria/ES</li>
+            <li>CEP: 29045-235</li>
+        </ul>
+
+        <ul>
+            <li>Tel.: (55) 27 3325-8883</li>
+        </ul>
+    </footer>
+
+    <script src="/js/perfil.js"></script>
+</body>
+
+</html>

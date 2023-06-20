@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    background-color: #559CDA;
+    height: 4.65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #publicacoes {
+    background-color: #F7F7F7;
+    color: #559CDA;
+    border-radius: 10vw;
+}
+
+nav ul li {
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.4vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    cursor: pointer;
+    border-radius: 10vw;
+}
+
+nav ul li:hover {
+    transition: .5s;
+    background-color: #F7F7F7;
+    color: #559CDA;
+}
+
+nav #home {
+    margin-left: 2vw;
+}
+
+nav ul li:not(#publicacoes) {
+    margin-right: 2vw;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#dots {
+    margin-right: 1.5vw;
+}
+
+#dots,
+#bell {
+    height: 2.6vw;
+}
+
+#avatar {
+    height: 3.5vw;
+}
+
+/*main*/
+main {
+    height: 95vh;
+    background-color: #E9F2F1;
+    width: 100%;
+    display: flex;
+}
+
+#amigos{
+    width: 35%;
+   
+    
+  }
+
+/*pesquisar*/
+
+#amigos .pesquisar{
+    margin-top: 4em;
+    padding: 0 80px;
+    display: flex;
+  }
+
+  .pesquisar input{
+    height: 3em;
+    width: 15em;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid black;
+    padding-left: 0.5em;
+    font-family: 'Co Text', sans-serif;
+    color: #11538C;
+
+  }
+
+
+.pesquisar img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 2.3em;
+    height: 2.3em;
+    cursor: pointer;
+}
+
+
+/*amigos*/  
+  #amigos .fotos{
+    display: flex;
+    margin-top: 2em;
+    padding: 0 80px;
+    width: 5em;
+    height: 5em;
+  }
+ 
+  #amigos .fotos .nome{
+    display: flex;
+  }
+
+
+  #amigos h3{
+    margin-left: 80px;
+    margin-top: 1em;
+   font-size: 30px;
+   font-family: 'Co Text', sans-serif;
+  }
+  
+ #amigos .fotos h2{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 1em;
+   width: 30vh;
+   
+    
+  }
+  
+  
+/*publicar*/
+
+  #publicar{
+    width: 50%;
+    
+  }
+
+ #publicar .bloco1{
+    margin-top: 4em;
+ }
+
+ .bloco .bloco1 h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Co Text', sans-serif;
+ }
+
+ .bloco1 input{
+    width: 70em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 2em;
+    font-family: 'Co Text', sans-serif;
+    border-radius: 20px;
+    border: none;
+    background-color: #397E64;
+    color: white;
+    padding-bottom: 10em;
+    padding-left: 1em;
+ }
+
+ .bloco1 input::placeholder {
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+    vertical-align: top;
+
+  }
+  
+  .checkbox{
+    display: flex;
+    margin-top: 1em;
+   
+  }
+  
+  .checkbox1{
+    display: flex;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .checkbox1 h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .checkbox img{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+
+  }
+
+.bloco .marcação {
+    margin-top: 1em;
+    font-size: 25px;
+    background-color: #D9D9D9;
+    width: 248px;
+    border-radius: 4px;
+    display: flex;
+}
+
+.marcação .marcações {
+    margin-right: 1em;
+    color: #11538C;
+    
+}
+
+.checkbox h2{
+    margin-left: 500px;
+    margin-right: 0.5em;
+    font-size: 20px;
+    
+
+}
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+  }
+  
+  .label-text {
+    margin-right: 10px;
+    color: #11538C;
+    font-family: 'Co Text', sans-serif;
+  }
+  
+  .checkbox-label input {
+    display: none;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+   
+  }
+  
+  .checkmark-center {
+    margin-right: 10px;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark {
+    background-color: #dddddd;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark-center {
+    background-color: #141414;
+    border: none;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 8px;
+    width: 8px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+  
+  #botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  #botao-container button {
+    cursor: pointer;
+    width: 130px;
+    height: 2em;
+    background-color: #397E64;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    border-radius: 39px;
+    border: none;
+    font-family: 'Co Text', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+.posts h4{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Co Text', sans-serif;
+
+}
+
+  .descricao{
+    display: flex;
+    margin-top: 2em;
+  
+  }
+  
+.descricao img{
+    width: 8em;
+    height: 8em;
+
+}
+
+
+  .descricao .text {
+    flex-direction: column;
+    
+
+  }
+
+  .text h3{
+    font-size: 25px;
+    margin-left: 0.7em;
+  }
+
+  .descricao1{
+    margin-top: 1em;
+    text-align: center;
+    text-align: justify;
+    width: 400px;
+    margin-left: 1em;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+
+  }
+
+  .descricao1 #arroba{
+    color: #11538C;
+  }
+
+.imagens{
+    margin-left: 9em;
+    margin-top: 0.5em;
+
+}
+
+.imagens img{
+    width: 1.5em;
+    height: 1.5;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 6vw;
+    background-color: #559CDA;
+}
+
+footer ul li {
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 1vw;
+}
+
+#fortes {
+    height: 5vw;
+}

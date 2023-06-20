@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Talentos</title>
+    <link rel="stylesheet" href="/css/publicacoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <a href="/html/home.html">
+                <li id="home">Home</li>
+            </a>
+            <a href="/html/filtragem.html">
+                <li id="filtragem">Filtragem de Qualidades</li>
+            </a>
+            <a href="/html/publicacoes.html" id="publicacoes">
+                <li id="publicacoes">Publicações</li>
+            </a>
+        </ul>
+
+        <ul>
+            <a href="/html/perfil.html">
+                <img src="/img/avatar.png" alt="avatar" id="avatar">
+            </a>
+            <a href="/html/perfil.html">
+                <img src="/img/dots.png" alt="dots" id="dots">
+            </a>
+            <a href="">
+                <img src="/img/bell.png" alt="bell" id="bell">
+            </a>
+            <a href="/html/ajuda.html">
+                <li id="ajuda">Ajuda</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="amigos">
+       
+            
+            <div class="bloco">
+                <div class="pesquisar">
+            <input type="text" id="search-input" placeholder="O que procura?">
+            <img src="/img/pesquisar.png" alt="">
+            </div>
+               <h3>Amigos</h3>
+              
+
+           <div class="fotos">
+               <img src="/img/claudio.png" alt="">
+               <div class="nome">
+               <h2>Claúdio Texeira</h2>
+               </div>
+           </div>
+
+           <div class="fotos">
+               <img src="/img/alberto.png" alt="">
+               <div class="nome">
+               <h2>Alberto Cazzaroto</h2>
+            </div>
+           </div>
+
+           <div class="fotos">
+               <img src="/img/alice.png" alt="">
+               <div class="nome">
+               <h2>Alice Natila</h2>
+            </div>
+           </div>
+
+           <div class="fotos">
+               <img src="/img/michael.png" alt="">
+               <div class="nome">
+               <h2>Michael Dos Santos</h2>
+            </div>
+           </div>
+        </div>
+         
+
+
+       </section>
+
+
+
+
+       <section id="publicar">
+<div class="bloco">
+    <div class="bloco1">
+           <h2>Que tal postar algo?</h2>
+           <input type="text" placeholder="No que você está pensando? ">
+        </div>
+           <div class="checkbox">
+            
+            <div class="checkbox1">
+               <label for="public-checkbox" class="checkbox-label">
+                 <span class="label-text">Público</span>
+                 <input type="checkbox" id="public-checkbox" name="privacy" value="public">
+                 <span class="checkmark"></span>
+                 <span class="checkmark-center"></span>
+               </label>
+             
+               <label for="private-checkbox" class="checkbox-label">
+                 <span class="label-text">Privado</span>
+                 <input type="checkbox" id="private-checkbox" name="privacy" value="private">
+                 <span class="checkmark"></span>
+                 <span class="checkmark-center"></span>
+               </label>
+            </div>
+
+               <h2>Selecionar arquivo</h2>
+               <img src="/img/arquivo.png" alt=""  onclick="openFileSelection()">
+               <input type="file" id="file-input" style="display: none;">
+             </div>
+
+             <div class="marcação">
+             <h6 class="marcações"> marcações:</h6> 
+                <h6>@albertocazzaroto</h6>
+            </div>
+
+            <div id="botao-container">
+                <button id="btn-publicar">Publicar</button>
+              </div>
+
+
+             <div class="posts">
+               <h4>Posts que te marcaram </h4>
+          
+           <div class="descricao">
+               <img src="/img/alberto.png" alt="">
+               <div class="text">
+               <h3>Alberto Cazzaroto</h3>
+               <div class="descricao1">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vel, ratione odit nesciunt nobis eaque tenetur ipsum nemo modi? Quaerat, reprehenderit eligendi nulla libero ea ducimus quis doloremque nam delectus!</p>
+                <p id="arroba">
+                @albertocazzaroto
+                </p>
+            </div>
+       
+           </div>
+           
+        </div>
+      
+    </div>
+    
+</div>
+
+<div class="imagens">
+    <img src="/img/curtida.png" alt="">
+    <img src="/img/comentario.png" alt="">
+    <img src="/img/compartilhar.png" alt="">
+    </div>
+
+
+             
+
+       </section>
+
+
+        
+    </main>
+
+    <footer>
+        <ul>
+            <a href="https://fortes.ind.br/" target="_blank">
+                <img src="/img/fortes.png" alt="logo fortes" id="fortes">
+            </a>
+        </ul>
+
+        <ul>
+            <li>Propósitos</li>
+            <li>Sustentabilidade</li>
+            <li>Gestao de Pessoas</li>
+            <li>Projetos sociais</li>
+        </ul>
+
+        <ul>
+            <li>Setores de Atuação</li>
+            <li>Melhor Solução Para os Clientes</li>
+            <li>Integridade</li>
+            <li>InovaFortes</li>
+        </ul>
+
+        <ul>
+            <li>Fale Conosco</li>
+            <li>Trabalhe Conosco</li>
+            <li>Notícias</li>
+            <li>Políticas de Privacidade</li>
+        </ul>
+
+        <ul>
+            <li>Avenida Maruipe, 2.793</li>
+            <li>Bairo Santa Luiza</li>
+            <li>Vitoria/ES</li>
+            <li>CEP: 29045-235</li>
+        </ul>
+
+        <ul>
+            <li>Tel.: (55) 27 3325-8883</li>
+        </ul>
+    </footer>
+
+    <script src="/js/publicaoes.js"></script>
+</body>
+
+</html>
